@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>048a6732-dc3e-431e-b66f-ecb8b376cef1</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>flashcard_aid.py</StartupFile>
+    <StartupFile>tests\prototype.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,7 +22,19 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="data_handling\database_management.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="data_handling\table_management.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="data_handling\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="flashcard_aid.py" />
+    <Compile Include="tests\prototype.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="storage\">
@@ -34,6 +46,10 @@
       <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
       <Architecture>X64</Architecture>
     </Interpreter>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="data_handling\" />
+    <Folder Include="tests\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
