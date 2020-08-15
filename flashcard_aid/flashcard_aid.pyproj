@@ -23,7 +23,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="data_handling\table_management.py">
+    <Compile Include="data_handling\db_handling.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="data_handling\__init__.py">
