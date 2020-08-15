@@ -23,9 +23,6 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="data_handling\database_management.py">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="data_handling\table_management.py">
       <SubType>Code</SubType>
     </Compile>
@@ -54,6 +51,9 @@
   <ItemGroup>
     <Folder Include="data_handling\" />
     <Folder Include="tests\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="requirements.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
