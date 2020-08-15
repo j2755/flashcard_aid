@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>048a6732-dc3e-431e-b66f-ecb8b376cef1</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>tests\prototype.py</StartupFile>
+    <StartupFile>tests\test_data_handling.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -12,6 +12,7 @@
     <Name>flashcard_aid</Name>
     <RootNamespace>flashcard_aid</RootNamespace>
     <InterpreterId>MSBuild|storage|$(MSBuildProjectFullPath)</InterpreterId>
+    <TestFramework>Pytest</TestFramework>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -33,6 +34,9 @@
     </Compile>
     <Compile Include="flashcard_aid.py" />
     <Compile Include="tests\prototype.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tests\test_data_handling.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

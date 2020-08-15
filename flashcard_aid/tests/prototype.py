@@ -14,8 +14,13 @@ class prototype():
                 print("correct")
             else:
                 print("false")
-
+    def generate_study_guide(self):
+        study_guide=""
+        for i in self.facts:
+           study_guide=study_guide+'\n'+i
+        return study_guide
 x=prototype()
-x.ask_questions()
+print(x.generate_study_guide())
+
 
 
