@@ -26,6 +26,9 @@
     <Compile Include="data_handling\db_handling.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="data_handling\table_management.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="data_handling\__init__.py">
       <SubType>Code</SubType>
     </Compile>
